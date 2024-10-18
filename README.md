@@ -56,7 +56,16 @@ Start the Flask server:
 ```
 python app.py
 ```
-Start ngrok on port 8080:
+## Ngrok Setup for Local Development
+Since the Flask server runs locally, we use **ngrok** to expose the server to the internet so that Twilio's WhatsApp Sandbox can communicate with it.
+
+1. Download and install ngrok from [here](https://ngrok.com/download).
+2. Once installed, authenticate ngrok by running:
+```
+ngrok authtoken your_ngrok_auth_token
+```
+(Get your authentication token from the ngrok dashboard after signing up).
+3. Start ngrok to expose your local Flask server:
 ```
 .\ngrok http 8080
 ```
