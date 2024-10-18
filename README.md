@@ -37,6 +37,49 @@ git clone https://github.com/your-username/virtual-tryon-whatsapp.git
 cd virtual-tryon-whatsapp
 ```
 Install the required Python packages:
+```
+pip install -r requirements.txt
+```
+Set up your environment variables:
+```
+TWILIO_ACCOUNT_SID=your_account_sid
+TWILIO_AUTH_TOKEN=your_auth_token
+```
+
+### Running the Application
+Start the Flask server:
+```
+python app.py
+```
+Start ngrok on port 8080:
+```
+.\ngrok http 8080
+```
+Copy the ngrok forwarding URL (e.g., https://e3e3-xxxx.ngrok-free.app) and set this as your Twilio webhook under the WhatsApp Sandbox Settings:
+```
+https://your-ngrok-url/webhook
+```
+Use WhatsApp to send a message or an image to the Twilio Sandbox number, and the application will respond with the virtual try-on result.
+
+### Code Explanation
+- **app.py**: The main Flask application that handles incoming WhatsApp messages, downloads the images from Twilio, and interacts with Gradio's virtual try-on model.
+- **static**: This folder stores the images temporarily that are sent by users.
+- **requirements.txt**: List of dependencies required for the project.
+
+### Key Functions
+- **webhook()**: Handles incoming POST requests from Twilio, manages the session, and interacts with the Gradio API.
+- **send_to_gradio()**: Sends the person and garment images to Gradio's model for processing.
+- **download_image()**: Downloads media files from Twilio's API and stores them locally.
+
+### Usage
+1. Send a photo of yourself via WhatsApp to the Twilio Sandbox number.
+2. You'll receive a prompt asking you to send a photo of the garment.
+3. After sending the garment photo, the system will process the images and send you the result with the garment virtually applied to your photo.
+
+## License
+This project is licensed under the MIT License.
+   
+
 
 
 
