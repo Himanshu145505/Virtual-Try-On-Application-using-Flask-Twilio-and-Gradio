@@ -18,7 +18,7 @@ This repository contains the code for a virtual try-on application built using F
 Before running this project, ensure you have the following:
 - Twilio account with WhatsApp sandbox setup.
 - Hugging Face account to use the Gradio API.
-- Python 3.x installed on your machine.
+- Python 3.6+ installed on your machine.
 
 ## Twilio Setup
 1. Create a [Twilio account](https://www.twilio.com/try-twilio).
