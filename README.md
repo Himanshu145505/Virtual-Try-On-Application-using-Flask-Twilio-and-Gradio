@@ -1,4 +1,4 @@
-# Virtual Try-On Prototype with Flask, Twilio, and Hugging Face's Gradio API ![17034231](https://github.com/user-attachments/assets/79f3d3ba-4d8d-4d98-ba8d-f8b24345d4fb)
+# [17034231](https://github.com/user-attachments/assets/79f3d3ba-4d8d-4d98-ba8d-f8b24345d4fb) Virtual Try-On Prototype with Flask, Twilio, and Hugging Face's Gradio API !
 
 This repository contains the code for a virtual try-on application built using Flask, Twilio's WhatsApp API, and Gradio's virtual try-on model. Users can send images via WhatsApp to Twilio to try on garments virtually, and the results are sent back to them.
 
