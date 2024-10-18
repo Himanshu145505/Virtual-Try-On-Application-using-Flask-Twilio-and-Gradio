@@ -22,9 +22,14 @@ Before running this project, ensure you have the following:
 
 ## Twilio Setup
 1. Create a [Twilio account](https://www.twilio.com/try-twilio).
-2. Activate the Twilio Sandbox for WhatsApp.
-3. Get your Twilio **Account SID** and **Auth Token** from your Twilio console.
-4. Take note of the Twilio Sandbox number for sending and receiving WhatsApp messages.
+2. Activate the [Twilio Sandbox for WhatsApp](https://www.twilio.com/console/sms/whatsapp/sandbox):
+   - In the Twilio console, navigate to the **Messaging** section and select **Try it Out** under the **WhatsApp** sandbox.
+   - Follow the instructions to join the sandbox by sending a WhatsApp message to the provided Twilio number.
+3. Get your **Twilio Account SID** and **Auth Token** from your Twilio console:
+   - Go to **Settings** in the Twilio console to find these credentials.
+4. Take note of the **Twilio Sandbox number** for sending and receiving WhatsApp messages.
+
+Once the sandbox is set up, you can start receiving and sending messages to the WhatsApp sandbox number for testing your virtual try-on application.
 
 ## Hugging Face Setup
 1. Create a [Hugging Face account](https://huggingface.co/join).
@@ -45,16 +50,6 @@ Set up your environment variables:
 TWILIO_ACCOUNT_SID=your_account_sid
 TWILIO_AUTH_TOKEN=your_auth_token
 ```
-## Twilio Setup
-1. Create a [Twilio account](https://www.twilio.com/try-twilio).
-2. Activate the Twilio Sandbox for WhatsApp(https://www.twilio.com/console/sms/whatsapp/sandbox):
-   - In the Twilio console, navigate to the **Messaging** section and select **Try it Out** under the **WhatsApp** sandbox.
-   - Follow the instructions to join the sandbox by sending a WhatsApp message to the provided Twilio number.
-3. Get your **Twilio Account SID** and **Auth Token** from your Twilio console:
-   - Go to **Settings** in the Twilio console to find these credentials.
-4. Take note of the **Twilio Sandbox number** for sending and receiving WhatsApp messages.
-
-Once the sandbox is set up, you can start receiving and sending messages to the WhatsApp sandbox number for testing your virtual try-on application.
 
 ### Running the Application
 Start the Flask server:
