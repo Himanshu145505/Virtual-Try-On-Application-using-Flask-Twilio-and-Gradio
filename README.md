@@ -76,6 +76,11 @@ Use WhatsApp to send a message or an image to the Twilio Sandbox number, and the
 2. You'll receive a prompt asking you to send a photo of the garment.
 3. After sending the garment photo, the system will process the images and send you the result with the garment virtually applied to your photo.
 
+## Future Enhancements
+- Integrate more detailed error handling for the Gradio API.
+- Add functionality to handle multiple garments or different garment categories (e.g. bottoms, shoes).
+- Deploy on a production-grade WSGI server like Gunicorn instead of the Flask development server.
+
 ## License
 This project is licensed under the MIT License.
    
