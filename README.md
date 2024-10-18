@@ -28,7 +28,7 @@ Before running this project, ensure you have the following:
 
 ## Hugging Face Setup
 1. Create a [Hugging Face account](https://huggingface.co/join).
-2. Use the **Nymbo Virtual Try-On** model available on Hugging Face Spaces: [Nymbo Virtual Try-On](https://huggingface.co/spaces/nymbo).
+2. Use the **Nymbo Virtual Try-On** model as API available on Hugging Face Spaces: [Nymbo Virtual Try-On](https://huggingface.co/spaces/Nymbo/Virtual-Try-On).
 
 ## Installation
 Clone the repository:
