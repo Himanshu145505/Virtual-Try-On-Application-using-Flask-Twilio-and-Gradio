@@ -34,7 +34,7 @@ Before running this project, ensure you have the following:
 Clone the repository:
 ```bash
 git clone https://github.com/your-username/virtual-tryon-whatsapp.git
-cd virtual-tryon-whatsapp
+cd virtual-tryon-whatsapp```
 
 Install the required Python packages:
 
