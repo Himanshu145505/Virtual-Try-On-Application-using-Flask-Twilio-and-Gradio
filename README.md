@@ -91,6 +91,8 @@ Use WhatsApp to send a message or an image to the Twilio Sandbox number, and the
 1. Send a photo of yourself via WhatsApp to the Twilio Sandbox number.
 2. You'll receive a prompt asking you to send a photo of the garment.
 3. After sending the garment photo, the system will process the images and send you the result with the garment virtually applied to your photo.
+![WhatsApp Image 2024-10-19 at 2 32 06 PM](https://github.com/user-attachments/assets/2ecb7ccb-5637-4785-8a30-55170ae8bcb8)
+
 
 ## Future Enhancements
 - Integrate more detailed error handling for the Gradio API.
