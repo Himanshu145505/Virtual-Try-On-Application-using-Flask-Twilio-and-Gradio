@@ -40,8 +40,8 @@ Once the sandbox is set up, you can start receiving and sending messages to the 
 ## Installation
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/virtual-tryon-whatsapp.git
-cd virtual-tryon-whatsapp
+git clone https://github.com/adarshb3/Virtual-Try-On-Application-using-Flask-Twilio-and-Gradio.git
+cd Virtual-Try-On-Application-using-Flask-Twilio-and-Gradio
 ```
 Install the required Python packages:
 ```
