@@ -14,7 +14,6 @@ This repository contains the code for a virtual try-on application built using F
 - **Twilio API**: To send and receive WhatsApp messages and media.
 - **Gradio API**: For interacting with the virtual try-on Gradio app, which uses IDM-VTON ([Improving Diffusion Models for Authentic Virtual Try-on](https://huggingface.co/yisol/IDM-VTON)) model under the hood to generate accurate garment try-on results.
 - **Ngrok**: For exposing the local server to the internet for WhatsApp interaction.
-- **OpenCV**: For handling images.
 
 ## Prerequisites
 Before running this project, ensure you have the following:
