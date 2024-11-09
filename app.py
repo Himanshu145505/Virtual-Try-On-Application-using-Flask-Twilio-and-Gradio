@@ -184,16 +184,6 @@ def download_image(media_url, filename):
         print(f"Error downloading image from Twilio: {err}")
         return None
 
-# Ensure Flask serves static files properly
-@app.route('/static/<path:filename>')
-def serve_static_file(filename):
-    file_path = os.path.join('static', filename)
-    # Check if the file exists and serve with the correct Content-Type
-    if os.path.exists(file_path):
-        return send_from_directory('static', filename, mimetype='image/png')
-    else:
-        print(f"File not found: {filename}")
-        return "File not found", 404
 
 if __name__ == '__main__':
     app.run(port=8080)
