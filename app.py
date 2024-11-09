@@ -45,6 +45,18 @@ def webhook():
     # Create a response object for Twilio
     resp = MessagingResponse()
 
+    
+# Ensure Flask serves static files properly
+@app.route('/static/<path:filename>')
+def serve_static_file(filename):
+    file_path = os.path.join('static', filename)
+    # Check if the file exists and serve with the correct Content-Type
+    if os.path.exists(file_path):
+        return send_from_directory('static', filename, mimetype='image/png')
+    else:
+        print(f"File not found: {filename}")
+        return "File not found", 404
+
     # If no image is received, inform the user
     if media_url is None:
         resp.message("We didn't receive an image. Please try sending your image again.")
